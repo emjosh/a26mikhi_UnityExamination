@@ -353,8 +353,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 717366470}
   - {fileID: 1642937301}
+  - {fileID: 717366470}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &188970216
@@ -2595,7 +2595,7 @@ GameObject:
   - component: {fileID: 410378736}
   - component: {fileID: 410378735}
   m_Layer: 5
-  m_Name: Text Dialogue
+  m_Name: Dialogue Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2730,7 +2730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 436451777}
   m_Layer: 5
-  m_Name: Talk Button (Parent)
+  m_Name: Skelly Talk Button (Parent)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3686,8 +3686,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1302815844}
-  - {fileID: 410378734}
   - {fileID: 1207900389}
+  - {fileID: 410378734}
   m_Father: {fileID: 1642937301}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3757,7 +3757,7 @@ GameObject:
   - component: {fileID: 717366468}
   - component: {fileID: 717366467}
   m_Layer: 5
-  m_Name: Worldspace
+  m_Name: Worldspace (Canvas)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3824,7 +3824,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &717366470
 RectTransform:
@@ -10282,7 +10282,7 @@ GameObject:
   - component: {fileID: 1642937303}
   - component: {fileID: 1642937302}
   m_Layer: 0
-  m_Name: Screenspace
+  m_Name: Screenspace (Canvas)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
