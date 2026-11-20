@@ -1696,6 +1696,8 @@ GameObject:
   - component: {fileID: 529957052}
   - component: {fileID: 529957055}
   - component: {fileID: 529957054}
+  - component: {fileID: 529957056}
+  - component: {fileID: 529957057}
   m_Layer: 0
   m_Name: Skelly
   m_TagString: Untagged
@@ -1771,7 +1773,7 @@ Transform:
   m_GameObject: {fileID: 529957051}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.22439, y: -1.27427, z: 0}
+  m_LocalPosition: {x: -4.27, y: -1.2, z: 0}
   m_LocalScale: {x: 3.49, y: 3.49, z: 3.49}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1866,6 +1868,41 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.231785, y: 0.37}
   m_EdgeRadius: 0
+--- !u!95 &529957056
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529957051}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e01ff0d1a445bfe4f91d41775fa8db57, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &529957057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529957051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309231bb2bfbcc24b9378096dc8cec33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimateWhenTalk
+  skellyAnimator: {fileID: 529957056}
 --- !u!1 &559933503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2940,6 +2977,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 529957057}
+        m_TargetAssemblyTypeName: AnimateWhenTalk, Assembly-CSharp
+        m_MethodName: TalkAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
