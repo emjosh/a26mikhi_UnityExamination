@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-6664466172823232935
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DEMI_JUMP_NOMRAL_05_{-6664466172823232935}
+  m_AudioClip: {fileID: 8300000, guid: 0f82c2edcd54896499091fd7bc60e775, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-6261250590049805894
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DEMI_JUMP_NOMRAL_02_{-6261250590049805894}
+  m_AudioClip: {fileID: 8300000, guid: d0994e036b055be43867fbc8857e98ce, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-873573168364066239
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DEMI_JUMP_NOMRAL_04_{-873573168364066239}
+  m_AudioClip: {fileID: 8300000, guid: 9b419e69a3206b945b185572fa673c43, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &7119638550620493
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DEMI_JUMP_NOMRAL_03_{7119638550620493}
+  m_AudioClip: {fileID: 8300000, guid: 03eff8b414f618843b1c2464fd71380f, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &997519870233111309
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DEMI_JUMP_NOMRAL_01_{997519870233111309}
+  m_AudioClip: {fileID: 8300000, guid: 78374a66a7c936345ab11e44ed651784, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Jump
+  m_Volume: 0
+  m_Pitch: -97
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: -3.4042606, y: 0}
+  m_PitchRandomizationRange: {x: -102.127716, y: 102.127655}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 997519870233111309}
+  - {fileID: -6261250590049805894}
+  - {fileID: 7119638550620493}
+  - {fileID: -873573168364066239}
+  - {fileID: -6664466172823232935}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 1
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 1
+  m_PitchRandomizationEnabled: 1
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
