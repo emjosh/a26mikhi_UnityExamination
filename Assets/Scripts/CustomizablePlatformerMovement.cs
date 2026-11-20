@@ -1,4 +1,3 @@
-using System.Text;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,17 +14,6 @@ using UnityEngine.InputSystem;
 // Use UnityEvents in the PlayerInput-component to call movement-functions in this script.
 
 // This script has setup for playing animations and sounds.
-
-
-
-
-
-
-//             ---  MIKAEL NOTES   ---
-
-// I animatorn använd två bools som heter "Walk" och "Jump" och koppla dessa till era respektive animationer
-// Resten borde skötas av skriptet
-
 
 public class CustomizablePlatformerMovement : MonoBehaviour
 {
@@ -57,7 +45,7 @@ public class CustomizablePlatformerMovement : MonoBehaviour
         
         rigidbody.gravityScale = 0; // Set gravity scale to 0 so player won't "fall". We will apply our own gravity!
 
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
     }
     
     void Update()
@@ -79,18 +67,17 @@ public class CustomizablePlatformerMovement : MonoBehaviour
         {
             if (velocity.y < 0)
             {
-                
+                // Has fallen. Play fall sound and/or trigger fall animation etc
             }
             else
             {
-                animator.SetBool("Jump", true);
+                // Has jumped. Play jump sound and/or trigger jump animation etc
             }
         }
         // Check if character gained contact with ground this frame
         else if (wasGrounded == false && isGrounded == true)
         {
             jumpReleased = false;
-            animator.SetBool("Jump", false);
             // Has landed, play landing sound and trigger landing animation
         }
         
@@ -102,15 +89,6 @@ public class CustomizablePlatformerMovement : MonoBehaviour
         
         // Write movement animation code here. (Suggestion: send your current velocity into the Animator for both the x- and y-axis.)
         // animator.SetFloat("HorizontalMovement", moveInput.x)
-
-        if (Mathf.Abs(rigidbody.linearVelocityX) > 0.01f)
-        {
-            animator.SetBool("Walk", true);
-        }
-        else
-        {
-            animator.SetBool("Walk", false);
-        }
         
         // Flip sprite according to direction (if a sprite renderer has been assigned)
         if (spriteRenderer)
