@@ -38,7 +38,8 @@ public class CustomizablePlatformerMovement : MonoBehaviour
     [Header("Graphics")]
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Animator animator;
-    
+   
+     
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -71,14 +72,14 @@ public class CustomizablePlatformerMovement : MonoBehaviour
             }
             else
             {
-                // Has jumped. Play jump sound and/or trigger jump animation etc
+               
             }
         }
         // Check if character gained contact with ground this frame
         else if (wasGrounded == false && isGrounded == true)
         {
             jumpReleased = false;
-            // Has landed, play landing sound and trigger landing animation
+            
         }
         
         rigidbody.linearVelocity = velocity;
